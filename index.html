@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Forum</title>
-  <link rel="stylesheet" href="/assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forum</title>
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <header>
-    <h1>The Forum</h1>
-    <button id="mode-toggle">Toggle Mode</button>
-  </header>
-  <main>
-    <form id="blog-form">
-      <input type="text" id="title" placeholder="Enter title">
-      <textarea id="content" placeholder="Enter content"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-    <div id="blog-posts"></div>
-  </main>
-  <script src="/assets/script.js"></script>
+    <header>
+        <h1>Create a New Post</h1>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="index.html">Create Post</a></li>
+            </ul>
+        </nav>
+        <button id="modeToggle">What's your preference?</button>
+    </header>
+  <section class="create-post">
+      <h2>Write Your Post</h2>
+      <form id="postForm" action="#" method="post">
+          <textarea name="postContent" id="postContent" rows="5" cols="50" placeholder="Write your post here"></textarea>
+          <input type="submit" value="Submit Post">
+      </form>
+  </section>
+  
+  <section class="view-posts">
+      <h2>View Posts</h2>
+      <ul id="postList"></ul>
+  </section>
+  
+    <footer>
+        <p>&copy; 2024 The Forum</p>
+    </footer>
+
+    <script src="/assets/script.js"></script>
 </body>
 </html>
+
