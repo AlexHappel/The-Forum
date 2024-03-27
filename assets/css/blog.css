@@ -1,0 +1,26 @@
+/* blog.css */
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.post p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Styling for dark mode */
+.dark-mode .post {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+/* Styles for displaying posts */

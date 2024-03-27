@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Forum</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <title>Forum</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
 </head>
 <body>
     <header>
-        <h1>Create a New Post</h1>
-        <nav>
-            <ul>
-                <li><a href="landing.html">Home</a></li>
-                <li><a href="index.html">Create Post</a></li>
-            </ul>
-        </nav>
-        <button id="modeToggle">What's your preference?</button>
+        <h1>Forum</h1>
+        <button id="toggleMode">Toggle Mode</button>
     </header>
-  <section class="create-post">
-      <h2>Write Your Post</h2>
-      <form id="postForm" action="#" method="post">
-          <textarea name="postContent" id="postContent" rows="5" cols="50" placeholder="Write your post here"></textarea>
-          <input type="submit" value="Submit Post">
-      </form>
-  </section>
-  
-  <section class="view-posts">
-      <h2>View Posts</h2>
-      <ul id="postList"></ul>
-  </section>
-  
+    <main>
+        <form id="postForm" class="form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="title">Title:</label>
+            <input type="text" id="title" required>
+            <label for="post">Post:</label>
+            <textarea id="post" required></textarea>
+            <button type="submit">Create Post</button>
+        </form>
+        <a href="blog.html">View Posts</a>
+    </main>
     <footer>
-        <p>&copy; 2024 The Forum</p>
+        <a href="#">Link to Portfolio</a>
     </footer>
-
-    <script src="/assets/script.js"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/logic.js"></script>
 </body>
 </html>
 

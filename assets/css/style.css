@@ -1,10 +1,18 @@
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f8f4f4;
+  color: #000000;
+}
+
+.dark-mode {
+  /* Adjust colors for dark mode */
+  background-color: #000000;
+  color: white
 }
 
 header, footer {
-  background-color: #333;
+  background-color: #6503b4;
   color: white;
   padding: 10px 20px;
 }
