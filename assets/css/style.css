@@ -12,7 +12,7 @@ body {
 }
 
 header, footer {
-  background-color: #6503b4;
+  background-image: linear-gradient(purple, gold); 
   color: white;
   padding: 10px 20px;
 }
@@ -28,11 +28,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
 }

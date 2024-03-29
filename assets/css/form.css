@@ -1,7 +1,13 @@
 /* form.css */
 form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
+    position: relative; /* Make the form container a positioned element */
+    padding: 20px; /* Add padding for inner content */
+    border: 2px solid #fa0505; /* Outer border */
+    border-style: double;
+    
+    border-radius: 10px;
 }
 
 label {
@@ -11,10 +17,27 @@ label {
 
 input[type="text"],
 textarea {
-    width: 100%;
+    width: 400px;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
+
+.submit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: groove;
+    cursor: pointer;
+  }
 
 button:hover {
     background-color: #0056b3;
